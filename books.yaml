@@ -1,0 +1,10 @@
+books:
+  authors:
+    - book:
+      author: Yukihiro Matsumoto
+      title: Ruby in a Nutshell
+      isbn: 0-596-00214-9
+    - book:
+      author: Zed A. Shaw
+      title: Learn Ruby The Hard Way
+      isbn: 978-0321884992 

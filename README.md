@@ -6,23 +6,14 @@ book_spec.rb test all use cases.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```ruby
-gem 'books'
+clone https://github.com/Traap/books.git
+cd books
+bundle install
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install books
 
 ## Usage
 rspec
-
 
 ## Development
 

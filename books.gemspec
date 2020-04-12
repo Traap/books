@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/traap/books'
   s.license       = 'BSD-3-Clause'
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
+  # 'allowed_push_host' to allow pushing to a single host or delete this section
+  # to allow pushing to any host.
   if s.respond_to?(:metadata)
     s.metadata['allowed_push_host'] = 'http://mygemserver.com'
 
@@ -38,7 +39,7 @@ Gem::Specification.new do |s|
 
   s.executables   = %[books]
 
-  s.add_development_dependency 'bundler', '~> 1.17'
-  s.add_development_dependency 'rake', '~> 10.0'
-  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
 end

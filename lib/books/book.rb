@@ -2,6 +2,7 @@ require 'pp'
 require 'psych'
 
 module Books
+  # The Book class
   class Book
     attr_accessor :author, :title, :isbn
     def initialize(author, title, isbn)
@@ -9,18 +10,19 @@ module Books
       @title = title
       @isbn = isbn
     end
-    def ==( z )
-      self.author = z.author and self.title = z.title and self.isbn = z.isbn
+
+    def ==(_other)
+      self.author = z.author && self.title = z.title && self.isbn = z.isbn
     end
     def self.load_from_yaml(file)
       books = []
       begin
         h = Psych.load_file(file)
-        h.each do |k0_, v0|
-          v0.each do |k1_, v1|
+        h.each do |_k0, v0|
+          v0.each do |_k1, v1|
             v1.each do |book|
               books << Book.new(
-                book['author'], 
+                book['author'],
                 book['title'],
                 book['isbn']
               )
